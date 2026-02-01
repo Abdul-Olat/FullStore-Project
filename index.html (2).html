@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub - Kids</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Same styles – copy from above if needed */
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Poppins',sans-serif; background:#f9f9f9; color:#333; }
+        .container { width:90%; max-width:1200px; margin:0 auto; }
+        header { background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); padding:1rem 0; position:fixed; width:100%; top:0; z-index:1000; }
+        header .container { display:flex; justify-content:space-between; align-items:center; }
+        header h1 { font-size:1.8rem; color:#e91e63; }
+        nav ul { list-style:none; display:flex; gap:2rem; }
+        nav a { text-decoration:none; color:#333; font-weight:500; }
+        .hero { background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://m.media-amazon.com/images/I/71+TZs0iLmL._AC_UY1000_.jpg') center/cover; height:60vh; display:flex; align-items:center; text-align:center; color:white; margin-top:80px; }
+        .hero h2 { font-size:3.5rem; margin-bottom:1rem; }
+        .products { padding:4rem 0; }
+        .product-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2rem; }
+        .product { background:white; border-radius:12px; overflow:hidden; box-shadow:0 6px 15px rgba(0,0,0,0.1); text-align:center; transition:transform 0.3s; position:relative; }
+        .product:hover { transform:translateY(-10px); }
+        .product img { width:100%; height:320px; object-fit:cover; }
+        .product-info { padding:1.5rem; }
+        .product h3 { margin:0.5rem 0; font-size:1.2rem; }
+        .product .price { font-size:1.4rem; color:#e91e63; font-weight:700; margin:1rem 0; }
+        footer { background:#333; color:white; text-align:center; padding:2rem 0; margin-top:4rem; }
+        @media (max-width:768px) { .hero h2 {font-size:2.5rem;} }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>StyleHub</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html (3).html">Men</a></li>
+                    <li><a href="index.html (4).html">Women</a></li>
+                    <li><a href="index.html (2).html">Kids</a></li>
+                    <li><a href="index.html (5).html">Sale</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Kids' Collection</h2>
+            <p>Fun, comfy & colorful – Perfect for little trendsetters</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom:3rem; font-size:2.5rem;">Featured Kids' Items</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/71+TZs0iLmL._AC_UY1000_.jpg" alt="Butterfly Hoodie Set">
+                    <div class="product-info">
+                        <h3>Butterfly Hoodie & Joggers</h3>
+                        <div class="price">$34.99</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://riocokidswear.com/cdn/shop/articles/xcxcxx_f74a8cc8-7fd9-4beb-bab0-a6e2b975395b_1234x.jpg?v=1657606472" alt="Denim Boy Outfit">
+                    <div class="product-info">
+                        <h3>Classic Denim & Tee</h3>
+                        <div class="price">$29.99</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/HTB1oFJaMpXXXXcMXFXXq6xXFXXXb/206119450/HTB1oFJaMpXXXXcMXFXXq6xXFXXXb.jpg?size=99772&height=462&width=750&hash=bfddb21255fc54d1c1c316f1a873ef98_960x960q75.jpg_.avif" alt="Plaid Shirt Boy">
+                    <div class="product-info">
+                        <h3>Red Plaid Shirt Set</h3>
+                        <div class="price">$24.99</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://www.youngeden.com/cdn/shop/articles/Summer_Fashion_2.jpg?v=1749070333&width=1100" alt="Beach Kid Outfit">
+                    <div class="product-info">
+                        <h3>Striped Beach Set</h3>
+                        <div class="price">$39.99</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://cdn.shopify.com/s/files/1/1993/5303/files/cute-children-having-fun.jpg?v=1666283417" alt="Cozy Toddler Knit">
+                    <div class="product-info">
+                        <h3>Cable Knit Sweater</h3>
+                        <div class="price">$28.99</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://cdn.shopify.com/s/files/1/0705/3885/4643/files/image-a535gqocy-1.png?v=1757662764" alt="School Cardigan">
+                    <div class="product-info">
+                        <h3>Green Cardigan & Jeans</h3>
+                        <div class="price">$35.99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 StyleHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
